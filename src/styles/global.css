@@ -263,6 +263,14 @@ a {
   font-size: clamp(16px, 1.6vw, 19px);
 }
 
+.hero-motto {
+  display: block;
+  margin-top: 14px;
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
 .hero-cta {
   margin-top: 44px;
   display: flex;

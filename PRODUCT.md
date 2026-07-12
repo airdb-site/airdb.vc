@@ -3,7 +3,7 @@
 ## Product Purpose
 AirDB Ventures 官网。一家立足海南三亚（海南自贸港）的早期基金，
 投资中国大陆一人有限责任公司（OPC）与「一带一路」沿线国家的一人公司/超级个体企业。
-网站唯一转化目标：让合适的创始人发一封邮件（hello@airdb.vc）。
+网站唯一转化目标：让合适的创始人发一封邮件（info@airdb.com）。
 
 ## register
 brand
