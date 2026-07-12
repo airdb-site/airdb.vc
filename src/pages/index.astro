@@ -1,0 +1,303 @@
+---
+import Base from "../layouts/Base.astro";
+
+const routeCities = [
+  "三亚",
+  "海口",
+  "新加坡",
+  "吉隆坡",
+  "雅加达",
+  "胡志明市",
+  "曼谷",
+  "金边",
+  "科伦坡",
+  "迪拜",
+  "利雅得",
+  "伊斯坦布尔",
+  "阿斯塔纳",
+  "塔什干",
+];
+
+const steps = [
+  {
+    tag: "第一步",
+    title: "提交项目",
+    desc: "一封邮件即可：你是谁、在做什么、为什么是你。不需要精美的 BP。",
+  },
+  {
+    tag: "第二步",
+    title: "初步交流",
+    desc: "十个工作日内回复。一次线上或三亚面对面的深入对话。",
+  },
+  {
+    tag: "第三步",
+    title: "尽职调查",
+    desc: "轻量务实的尽调：产品、数据、公司主体与合规状况。",
+  },
+  {
+    tag: "第四步",
+    title: "投资决策",
+    desc: "小额快决策。条款简洁，创始人友好，不设对赌。",
+  },
+  {
+    tag: "第五步",
+    title: "投后同行",
+    desc: "公司治理、跨境架构、AI 工具栈与出海资源的长期陪伴。",
+  },
+];
+---
+
+<Base>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="brand-seal">一</span>
+        <span class="brand-name">
+          AIRDB VENTURES
+          <small>海南 · 三亚</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="站内导航">
+        <a href="#thesis">投资信念</a>
+        <a href="#scope">投资范围</a>
+        <a href="#hainan">为什么三亚</a>
+        <a href="#process">投资流程</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+  <!-- ================= hero ================= -->
+  <section class="hero">
+    <div class="hero-stroke" aria-hidden="true"></div>
+    <div class="hero-vertical" aria-hidden="true">海上丝路 · 由此出发</div>
+    <div class="wrap hero-inner">
+      <p class="hero-eyebrow">AIRDB VENTURES — 早期基金 · 海南三亚</p>
+      <h1>
+        投资<span class="one">一</span>个人<br />
+        的公司
+      </h1>
+      <p class="hero-sub">
+        一人公司、一带一路，都从「一」开始。我们立足海南自贸港，
+        投资中国大陆的一人有限责任公司（OPC），以及「一带一路」沿线国家的超级个体企业。
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact">提交项目</a>
+        <a class="btn btn-ghost" href="#thesis">了解我们的信念</a>
+      </div>
+      <div class="hero-meta">
+        <div>
+          <b>一人公司</b>
+          <span>ONE-PERSON COMPANY</span>
+        </div>
+        <div>
+          <b>一带一路</b>
+          <span>BELT &amp; ROAD</span>
+        </div>
+        <div>
+          <b>一期一会</b>
+          <span>LONG-TERM PARTNER</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= thesis ================= -->
+  <section id="thesis">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num" aria-hidden="true">壹</span>
+        <div class="sec-title">
+          <h2>我们的信念</h2>
+          <p>Investment Thesis</p>
+        </div>
+      </div>
+      <p class="lede reveal">
+        AI 正在把公司的最小单元压缩到<em>一个人</em>。
+        一位创始人，借助 AI 与全球化的数字基础设施，
+        可以完成过去需要一整个团队才能完成的事。
+        我们相信，下一个十年会诞生大量「一人独角兽」——
+        AirDB Ventures 正是为这个时代而设立的基金。
+      </p>
+      <div class="thesis-grid reveal">
+        <div class="thesis-card">
+          <i>杠杆 / LEVERAGE</i>
+          <h3>AI 是新的员工</h3>
+          <p>
+            代码、设计、营销、客服——智能体正在接管公司的执行层。
+            一个人指挥一支 AI 团队，边际成本趋近于零，人效不再有上限。
+          </p>
+        </div>
+        <div class="thesis-card">
+          <i>制度 / INSTITUTION</i>
+          <h3>一人公司的时代合法性</h3>
+          <p>
+            从中国的一人有限责任公司，到各国日益完善的独资企业制度，
+            「一个人开公司」在全球范围内拥有了清晰的法律地位与治理框架。
+          </p>
+        </div>
+        <div class="thesis-card">
+          <i>市场 / MARKET</i>
+          <h3>数字丝路上的全球生意</h3>
+          <p>
+            支付、物流、云与开源，让一个人的产品第一天就能服务全球。
+            「一带一路」沿线的新兴市场，正是超级个体最好的增量战场。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= scope ================= -->
+  <section id="scope">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num" aria-hidden="true">贰</span>
+        <div class="sec-title">
+          <h2>投资范围</h2>
+          <p>Where We Invest</p>
+        </div>
+      </div>
+      <div class="pillars reveal">
+        <div class="pillar" data-tag="境内 · ONSHORE">
+          <h3>中国大陆一人公司</h3>
+          <p class="pillar-en">One-Person Company · Mainland China</p>
+          <p>
+            投资注册于中国大陆的一人有限责任公司，
+            创始人即公司。我们偏爱产品驱动、现金流健康、
+            用 AI 放大个人能力的小而美生意。
+          </p>
+          <ul>
+            <li>AI 应用与智能体服务</li>
+            <li>开发者工具与开源商业化</li>
+            <li>跨境电商与品牌出海</li>
+            <li>数字内容与知识服务</li>
+          </ul>
+        </div>
+        <div class="pillar" data-tag="出海 · OFFSHORE">
+          <h3>一带一路沿线一人公司</h3>
+          <p class="pillar-en">Solo Ventures · Belt &amp; Road</p>
+          <p>
+            投资注册于「一带一路」共建国家的一人公司与独资企业——
+            东南亚、中东、中亚——服务当地市场，或以当地为支点面向全球。
+          </p>
+          <ul>
+            <li>东南亚：新加坡、马来西亚、印尼、越南、泰国</li>
+            <li>中东：阿联酋、沙特阿拉伯</li>
+            <li>中亚与其他共建国家</li>
+            <li>华人创始人出海 · 本地超级个体</li>
+          </ul>
+        </div>
+      </div>
+      <div class="route-strip reveal" aria-hidden="true">
+        <div class="route-track">
+          {[0, 1].map(() => routeCities.map((c) => <><span>{c}</span><b>—</b></>))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= hainan ================= -->
+  <section id="hainan" class="hainan">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num" aria-hidden="true">叁</span>
+        <div class="sec-title">
+          <h2>为什么在三亚</h2>
+          <p>Why Sanya, Hainan</p>
+        </div>
+      </div>
+      <div class="hainan-grid">
+        <div class="reveal">
+          <p class="lede">
+            海南自由贸易港是中国开放程度最高的区域之一，
+            也是面向东南亚的<em>天然门户</em>。
+            基金设立于三亚，让「投资境内 OPC」与「投向一带一路」
+            这两件事，可以在同一个制度框架下完成。
+          </p>
+          <p class="hainan-note">
+            注：以上政策内容仅为一般性介绍，具体以海南省及国家相关法规、
+            主管部门认定为准，不构成任何承诺或投资建议。
+          </p>
+        </div>
+        <ul class="policy-list reveal">
+          <li>
+            <div>
+              <b>企业所得税优惠</b>
+              <p>注册在海南自贸港的鼓励类产业企业，可适用 15% 企业所得税税率。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>QFLP 跨境投资便利</b>
+              <p>海南 QFLP（合格境外有限合伙人）试点，为跨境股权投资提供资金进出通道。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>面向东南亚的区位</b>
+              <p>三亚地处海上丝绸之路要冲，与东南亚主要城市同处四小时航程圈。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>人的自由流动</b>
+              <p>免签与人才政策让创始人往来更容易——我们希望在三亚当面见到你。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= process ================= -->
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num" aria-hidden="true">肆</span>
+        <div class="sec-title">
+          <h2>投资流程</h2>
+          <p>How It Works</p>
+        </div>
+      </div>
+      <div class="steps reveal">
+        {steps.map((s) => (
+          <div class="step">
+            <i>{s.tag}</i>
+            <h3>{s.title}</h3>
+            <p>{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= contact ================= -->
+  <section id="contact" class="contact">
+    <div class="wrap reveal">
+      <div class="contact-seal" aria-hidden="true">一</div>
+      <h2>一个人，也值得被投资。</h2>
+      <a class="contact-mail" href="mailto:hello@airdb.vc">hello@airdb.vc</a>
+      <p class="contact-hint">
+        一封邮件介绍你自己和你的公司即可 · 我们会在十个工作日内回复
+      </p>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div>
+        <div>© 2026 AirDB Ventures · 海南 · 三亚</div>
+        <div style="margin-top: 8px;">
+          <a href="https://github.com/airdb-site" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <p class="disclaim">
+        本网站内容仅作一般性介绍，不构成任何投资建议、要约或要约邀请。
+        私募基金投资有风险，仅面向合格投资者。
+      </p>
+    </div>
+  </footer>
+</Base>
