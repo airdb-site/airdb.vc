@@ -4,9 +4,11 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
 }
 
 const {
+  noindex = false,
   title = "AirDB Ventures · 投资一个人的公司 | 海南三亚",
   description = "AirDB Ventures 是一家立足海南三亚的早期基金，专注投资中国大陆一人公司（OPC）与「一带一路」沿线国家的超级个体企业。生在中国，走向世界。",
 } = Astro.props;
@@ -35,7 +37,7 @@ const orgLd = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="canonical" href={Astro.url} />
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={Astro.url} />}
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AirDB Ventures" />
